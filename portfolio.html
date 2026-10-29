@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riya Shinde | Portfolio</title>
+  <meta name="description" content="Portfolio of Riya Shinde - First-year Computer Science student at Newton School of Technology exploring AI, Machine Learning, and Web Development.">
+  
+  <!-- Link to the external CSS stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================
+       1. NAVIGATION BAR
+       - Contains brand initials / name on the left.
+       - Contains anchor links navigating to sections on this page.
+       ======================================================== -->
+  <header class="header">
+    <nav class="navbar container">
+      <!-- Logo / Name -->
+      <a href="#home" class="nav-logo">
+        <span class="logo-badge">RS</span>
+        <span class="logo-text">Riya Shinde</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About Me</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#learning" class="nav-link">Currently Learning</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link nav-link-btn">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ========================================================
+         2. HERO SECTION
+         - Welcoming introduction, headline, short bio, and CTAs.
+         - Includes an editable profile picture placeholder.
+         ======================================================== -->
+    <section id="home" class="hero-section">
+      <div class="container hero-container">
+        
+        <!-- Left Column: Hero Text Content -->
+        <div class="hero-content">
+          <span class="badge">Welcome to my portfolio</span>
+          <h1 class="hero-title">Hi, I'm <span class="highlight">Riya Shinde</span></h1>
+          <p class="hero-headline">Computer Science Student | Exploring AI &amp; Machine Learning</p>
+          <p class="hero-description">
+            I am a first-year B.Tech student who is passionate about technology, 
+            learning, and building projects. Excited to explore artificial intelligence, 
+            software engineering, and creative problem solving.
+          </p>
+
+          <!-- Call-to-Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+
+        <!-- Right Column: Profile Image Placeholder -->
+        <div class="hero-image-wrapper">
+          <div class="profile-card">
+            <!-- 
+              TIP: To add your own photo:
+              1. Place your image file (e.g. photo.jpg) in the same folder as this HTML file.
+              2. Replace the SVG below with:
+                 <img src="photo.jpg" alt="Riya Shinde" class="profile-photo">
+            -->
+            <div class="profile-placeholder">
+              <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span class="placeholder-caption">Profile Photo Placeholder</span>
+              <span class="placeholder-hint">(Replace with photo.jpg)</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         3. ABOUT ME SECTION
+         - Information on academic journey, technical interests,
+           and extracurricular interests (MUN, reading, diplomacy).
+         ======================================================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get To Know Me</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">
+            A first-year student building strong computer science foundations and exploring new horizons.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Main Journey Card -->
+          <div class="about-card journey-card">
+            <div class="card-icon">&#127891;</div>
+            <h3 class="card-title">My Academic Journey</h3>
+            <p>
+              I am a first-year Computer Science student at <strong>Newton School of Technology</strong>. 
+              Starting my university journey has sparked a strong curiosity to understand how software works 
+              under the hood and how computational thinking can solve practical challenges.
+            </p>
+            <p>
+              Right now, I am dedicated to mastering programming fundamentals, writing clean code, and establishing 
+              consistent problem-solving habits as a foundation for advanced engineering topics.
+            </p>
+          </div>
+
+          <!-- Technical Curiosity Card -->
+          <div class="about-card">
+            <div class="card-icon">&#9881;&#65039;</div>
+            <h3 class="card-title">Technical Curiosity</h3>
+            <p>
+              I am particularly fascinated by <strong>Artificial Intelligence and Machine Learning</strong>. 
+              I love discovering how intelligent algorithms find patterns in data and automate meaningful tasks.
+            </p>
+            <p>
+              Alongside AI/ML, I actively practice <strong>Python</strong>, experiment with foundational <strong>Web Development (HTML &amp; CSS)</strong>, 
+              and enjoy breaking down logical problems into clean, structured steps.
+            </p>
+          </div>
+
+          <!-- Beyond The Screen Card -->
+          <div class="about-card">
+            <div class="card-icon">&#127757;</div>
+            <h3 class="card-title">Beyond The Screen</h3>
+            <p>
+              Outside of academics and coding, I have a deep interest in <strong>Model United Nations (MUN)</strong> and 
+              <strong>international relations</strong>. Engaging in diplomatic debate has taught me critical thinking, public speaking, 
+              and how to look at complex world problems from diverse perspectives.
+            </p>
+            <p>
+              I also love <strong>reading</strong> non-fiction and tech literature, which keeps me inspired, reflective, and continually curious.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         4. SKILLS SECTION
+         - Simple cards & tags showing technical & soft skills.
+         - Clear distinction between "Developed" and "In Progress".
+         ======================================================== -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Capabilities</span>
+          <h2 class="section-title">My Skills</h2>
+          <p class="section-subtitle">
+            An honest, transparent view of the skills I have developed and those I am currently practicing.
+          </p>
+        </div>
+
+        <div class="skills-wrapper">
+          
+          <!-- Category 1: Skills I Have Developed -->
+          <div class="skills-block">
+            <div class="skills-block-header">
+              <span class="status-indicator status-developed"></span>
+              <h3>Skills I Have Developed</h3>
+              <p class="block-note">Comfortable with the core concepts and actively applying them.</p>
+            </div>
+
+            <div class="skills-grid">
+              <!-- Skill: HTML5 -->
+              <div class="skill-card">
+                <div class="skill-top">
+                  <span class="skill-name">HTML5</span>
+                  <span class="skill-badge badge-developed">Developed</span>
+                </div>
+                <p class="skill-desc">Semantic page structuring, accessible tags, document outline, and clean markup.</p>
+              </div>
+
+              <!-- Skill: CSS3 -->
+              <div class="skill-card">
+                <div class="skill-top">
+                  <span class="skill-name">CSS3</span>
+                  <span class="skill-badge badge-developed">Developed</span>
+                </div>
+                <p class="skill-desc">Flexbox, CSS Grid layouts, responsive styling, color systems, and modern styling principles.</p>
+              </div>
+
+              <!-- Skill: Python Fundamentals -->
+              <div class="skill-card">
+                <div class="skill-top">
+                  <span class="skill-name">Python Fundamentals</span>
+                  <span class="skill-badge badge-developed">Developed</span>
+                </div>
+                <p class="skill-desc">Variables, control flow, functions, loops, basic data structures, and script writing.</p>
+              </div>
+
+              <!-- Skill: Problem Solving -->
+              <div class="skill-card">
+                <div class="skill-top">
+                  <span class="skill-name">Problem Solving</span>
+                  <span class="skill-badge badge-developed">Developed</span>
+                </div>
+                <p class="skill-desc">Algorithmic thinking, decomposing larger tasks into manageable steps, and structured debugging.</p>
+              </div>
+
+              <!-- Skill: Communication -->
+              <div class="skill-card">
+                <div class="skill-top">
+                  <span class="skill-name">Communication</span>
+                  <span class="skill-badge badge-developed">Developed</span>
+                </div>
+                <p class="skill-desc">Articulating ideas clearly through MUN debates, presentations, and technical documentation.</p>
+              </div>
+
+              <!-- Skill: Teamwork -->
+              <div class="skill-card">
+                <div class="skill-top">
+                  <span class="skill-name">Teamwork</span>
+                  <span class="skill-badge badge-developed">Developed</span>
+                </div>
+                <p class="skill-desc">Collaborating effectively in group assignments, peer learning, and shared student initiatives.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Skills I Am Currently Learning -->
+          <div class="skills-block">
+            <div class="skills-block-header">
+              <span class="status-indicator status-learning"></span>
+              <h3>Skills I Am Currently Learning</h3>
+              <p class="block-note">Active areas of ongoing study, practice, and exploration.</p>
+            </div>
+
+            <div class="skills-grid">
+              <!-- Skill: Intro to AI & ML -->
+              <div class="skill-card">
+                <div class="skill-top">
+                  <span class="skill-name">Introductory AI &amp; ML</span>
+                  <span class="skill-badge badge-learning">Learning</span>
+                </div>
+                <p class="skill-desc">Understanding foundational machine learning algorithms, model concepts, and data preprocessing.</p>
+              </div>
+
+              <!-- Skill: Data Structures Basics -->
+              <div class="skill-card">
+                <div class="skill-top">
+                  <span class="skill-name">Data Structures Basics</span>
+                  <span class="skill-badge badge-learning">Learning</span>
+                </div>
+                <p class="skill-desc">Exploring arrays, linked lists, stacks, and time complexity fundamentals in Python.</p>
+              </div>
+
+              <!-- Skill: Git & Version Control -->
+              <div class="skill-card">
+                <div class="skill-top">
+                  <span class="skill-name">Git &amp; Version Control</span>
+                  <span class="skill-badge badge-learning">Learning</span>
+                </div>
+                <p class="skill-desc">Learning commit workflows, branches, repository management, and GitHub collaboration.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         5. CURRENTLY LEARNING SECTION
+         - Dedicated space highlighting first-year academic focus,
+           current topics, and learning roadmap. Easy to update!
+         ======================================================== -->
+    <section id="learning" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Roadmap</span>
+          <h2 class="section-title">Currently Learning</h2>
+          <p class="section-subtitle">
+            What I am actively focusing on right now as a first-year student.
+          </p>
+        </div>
+
+        <div class="learning-container">
+          <div class="learning-intro-card">
+            <h3>First-Year Learning Journey</h3>
+            <p>
+              As a beginner, my priority is establishing rigorous programming fundamentals rather than jumping straight 
+              into high-level frameworks. Here are the core topics I am actively practicing every week:
+            </p>
+          </div>
+
+          <div class="learning-topics-grid">
+            <!-- Topic 1 -->
+            <div class="learning-item">
+              <div class="learning-number">01</div>
+              <div class="learning-info">
+                <h4>HTML5 &amp; Modern CSS3</h4>
+                <p>Building semantic, accessible, and responsive web pages without relying on frameworks.</p>
+              </div>
+            </div>
+
+            <!-- Topic 2 -->
+            <div class="learning-item">
+              <div class="learning-number">02</div>
+              <div class="learning-info">
+                <h4>Python Programming</h4>
+                <p>Deepening knowledge of functions, file handling, object-oriented concepts, and clean syntax.</p>
+              </div>
+            </div>
+
+            <!-- Topic 3 -->
+            <div class="learning-item">
+              <div class="learning-number">03</div>
+              <div class="learning-info">
+                <h4>Programming Fundamentals</h4>
+                <p>Practicing algorithmic logic, pseudocode breakdown, and basic data organization.</p>
+              </div>
+            </div>
+
+            <!-- Topic 4 -->
+            <div class="learning-item">
+              <div class="learning-number">04</div>
+              <div class="learning-info">
+                <h4>Introductory AI &amp; Machine Learning</h4>
+                <p>Reading foundational AI concepts, understanding supervised learning, and exploring math for ML.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="learning-footer-note">
+            <p><em>&#128161; This section is updated regularly as I progress through my academic curriculum and self-directed projects.</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         6. PROJECTS SECTION
+         - Showcase of projects.
+         - Includes clean, labeled placeholders ready to be customized.
+         ======================================================== -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio Work</span>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">
+            Hands-on work demonstrating my growing technical skills. Placeholders will be replaced as new projects are completed.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: Personal Portfolio (Current Live Project) -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-tag tag-completed">Completed</span>
+              <span class="project-category">Web Development</span>
+            </div>
+            <h3 class="project-title">Personal Portfolio Website</h3>
+            <p class="project-description">
+              A clean, modern, and accessible personal portfolio website built completely from scratch 
+              using semantic HTML5 and vanilla CSS3 without any external frameworks.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-pill">HTML5</span>
+              <span class="tech-pill">CSS3</span>
+              <span class="tech-pill">Responsive Design</span>
+            </div>
+            <div class="project-links">
+              <!-- Edit href with your project repository URL -->
+              <a href="#home" class="project-link">View Project &uarr;</a>
+              <span class="project-link-note">(Current Page)</span>
+            </div>
+          </article>
+
+          <!-- Project 2: Placeholder for Python Project -->
+          <article class="project-card project-placeholder-card">
+            <div class="project-header">
+              <span class="project-tag tag-upcoming">In Progress</span>
+              <span class="project-category">Python &amp; Problem Solving</span>
+            </div>
+            <h3 class="project-title">Project Placeholder: Python Tool</h3>
+            <p class="project-description">
+              [Editable Placeholder] An upcoming Python project focusing on core logic, interactive CLI menus, 
+              and data handling. This space will showcase my first complete Python application.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Algorithms</span>
+              <span class="tech-pill">CLI</span>
+            </div>
+            <div class="project-links">
+              <!-- When you build this project, update this link to your GitHub repo -->
+              <a href="#contact" class="project-link">Code Coming Soon &rarr;</a>
+              <span class="project-link-note">(Will link to GitHub)</span>
+            </div>
+          </article>
+
+          <!-- Project 3: Placeholder for AI/ML or Web Exploration -->
+          <article class="project-card project-placeholder-card">
+            <div class="project-header">
+              <span class="project-tag tag-upcoming">Planned</span>
+              <span class="project-category">Intro AI / Data Analysis</span>
+            </div>
+            <h3 class="project-title">Project Placeholder: Machine Learning Exploration</h3>
+            <p class="project-description">
+              [Editable Placeholder] A planned exploration into basic machine learning using Python libraries 
+              (NumPy, Pandas, or Scikit-learn) to analyze a real-world dataset.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Machine Learning</span>
+              <span class="tech-pill">Data Analysis</span>
+            </div>
+            <div class="project-links">
+              <!-- When you build this project, update this link to your GitHub repo -->
+              <a href="#contact" class="project-link">Code Coming Soon &rarr;</a>
+              <span class="project-link-note">(Will link to GitHub)</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         7. ACHIEVEMENTS & EXPERIENCE SECTION
+         - Academic, Model United Nations, hackathons, and activities.
+         - Clean card/timeline layout with authentic placeholder entries.
+         ======================================================== -->
+    <section id="achievements" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Milestones</span>
+          <h2 class="section-title">Achievements &amp; Experience</h2>
+          <p class="section-subtitle">
+            Key academic milestones, extracurricular leadership, and participatory experiences.
+          </p>
+        </div>
+
+        <div class="timeline">
+          
+          <!-- Item 1: Academic -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-category">Academics</span>
+                <span class="timeline-period">2026 &ndash; Present</span>
+              </div>
+              <h3 class="timeline-title">B.Tech in Computer Science &amp; Engineering</h3>
+              <h4 class="timeline-org">Newton School of Technology</h4>
+              <p>
+                Enrolled as a first-year undergraduate student focusing on strong computational fundamentals, 
+                discrete mathematics, programming concepts, and technology trends.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2: Model United Nations -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-category">Debate &amp; Leadership</span>
+                <span class="timeline-period">Ongoing Experience</span>
+              </div>
+              <h3 class="timeline-title">Model United Nations (MUN) Delegate</h3>
+              <h4 class="timeline-org">Inter-School &amp; University Conferences</h4>
+              <p>
+                Represented assigned nations in simulation committees to debate multilateral policy, negotiate draft resolutions, 
+                and advocate diplomatic solutions to pressing international issues.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3: Hackathons & Workshops -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-category">Workshops &amp; Events</span>
+                <span class="timeline-period">First-Year Participation</span>
+              </div>
+              <h3 class="timeline-title">Coding Workshops &amp; Beginner Hackathons</h3>
+              <h4 class="timeline-org">University Tech Community</h4>
+              <p>
+                Participating in campus coding sessions, technical webinars, and introductory developer bootcamps to broaden practical knowledge.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4: Volunteering & Community -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-category">Volunteering</span>
+                <span class="timeline-period">Active</span>
+              </div>
+              <h3 class="timeline-title">Student Clubs &amp; Event Organizing</h3>
+              <h4 class="timeline-org">Campus Initiatives</h4>
+              <p>
+                Contributing to student-led clubs, assisting with event coordination, and supporting peer learning circles.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         8. CONTACT SECTION
+         - Editable links for LinkedIn, GitHub, and Email.
+         - Clean contact cards and a direct email action button.
+         - Avoids broken/non-functional forms.
+         ======================================================== -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">
+            I am always eager to learn from others, collaborate on beginner-friendly projects, or discuss Model UN and AI.
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-info-block">
+            <h3>Reach Out Directly</h3>
+            <p>
+              Feel free to connect on social platforms or send me a direct email message. 
+              I will do my best to get back to you!
+            </p>
+
+            <div class="contact-links-grid">
+              
+              <!-- Email Link (Replace with your actual email) -->
+              <a href="mailto:riya.shinde.placeholder@example.com" class="contact-link-item">
+                <div class="contact-item-icon">&#9993;&#65039;</div>
+                <div class="contact-item-content">
+                  <span class="contact-item-label">Email</span>
+                  <span class="contact-item-val">riya.shinde.placeholder@example.com</span>
+                </div>
+              </a>
+
+              <!-- LinkedIn Link (Replace with your LinkedIn profile URL) -->
+              <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                <div class="contact-item-icon">&#128188;</div>
+                <div class="contact-item-content">
+                  <span class="contact-item-label">LinkedIn</span>
+                  <span class="contact-item-val">linkedin.com/in/your-linkedin-username</span>
+                </div>
+              </a>
+
+              <!-- GitHub Link (Replace with your GitHub profile URL) -->
+              <a href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                <div class="contact-item-icon">&#128187;</div>
+                <div class="contact-item-content">
+                  <span class="contact-item-label">GitHub</span>
+                  <span class="contact-item-val">github.com/your-github-username</span>
+                </div>
+              </a>
+
+            </div>
+
+            <!-- Direct Contact Button -->
+            <div class="contact-cta">
+              <a href="mailto:riya.shinde.placeholder@example.com" class="btn btn-primary btn-large">
+                Send Me An Email &rarr;
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================
+       9. FOOTER
+       - Name, concise tagline, and copyright notice.
+       ======================================================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <p class="footer-brand">Riya Shinde</p>
+        <p class="footer-tagline">Computer Science Student &bull; Newton School of Technology</p>
+      </div>
+
+      <div class="footer-center">
+        <a href="#home" class="footer-back-to-top">&uarr; Back to Top</a>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-copy">&copy; 2026 Riya Shinde. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
